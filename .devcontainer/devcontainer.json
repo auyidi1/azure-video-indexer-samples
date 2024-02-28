@@ -1,0 +1,19 @@
+{
+    "name": "My Development Environment",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu", // Or another base image of your choice
+
+    // Install essential tools and features
+    "features": {
+        "ghcr.io/devcontainers/features/azure-cli:1.2": {} 
+    },
+
+    // Customize as needed with additional tools, extensions, etc.
+    "customizations": {
+        "vscode": { 
+            "extensions": [
+                "ms-dotnettools.csharp",
+		        "vsls-contrib.codetour"
+            ]
+        }
+    }
+}
