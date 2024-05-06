@@ -63,7 +63,7 @@ Once deployed you will get a URL to the Data Plane API of your new Video Indexer
 
 ## 2. Manual deployment steps start here
 
-Follow these steps to deploy the Video Indexer Arc Extention to your Arc K8S Enabled cluster. 
+Follow these steps to deploy the Video Indexer Arc Extension to your Arc K8S Enabled cluster. 
 
 ### Hardware and Software Requirements
 
@@ -97,7 +97,7 @@ The following is the minumum and recommended requirements if the extension conta
 ### Step 1 - Create Azure Arc Kubernetes Cluster and connect it to your cluster
 
 > **_Note_:** 
-> -The following command assumes you have a kubernetes cluster and that the Current Contenxt on your ./kube/config file points to it.
+> -The following command assumes you have a kubernetes cluster and that the Current Context on your ./kube/config file points to it.
 
 Run the following command to connect your cluster. This command deploys the Azure Arc agents to the cluster and installs Helm v. 3.6.3 to the .azure folder of the deployment machine. This Helm 3 installation is only used for Azure Arc, and it does not remove or change any previously installed versions of Helm on the machine.
 
@@ -115,7 +115,7 @@ az connectedk8s connect --name myAKSCluster --resource-group myResourceGroup
 ### Step 2 - Create Cognitive Services Resources for the extension
 
 > **_Note_:**
-> - The resources are created once per each subscription, and used by all the extenions under that subscription. 
+> - The resources are created once per each subscription, and used by all the extensions under that subscription. 
 
 One of the prerequisites to installing a VI Arc extension are speech and translator resources. Once the resources are created, their key and endpoint need to be provided in the installation process. 
 The resources are created once per subscription.
